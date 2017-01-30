@@ -36,8 +36,7 @@ foreach($aBooksResult as $oBook)
 		}
 		
 		$aSimplePattern[$oBook->livre_id] = $sKeyword ;
-		
-		// TODO tester l'expression régulière avec une balise img contenant le mot clé
+
 		$aPattern[$oBook->livre_id] = "~(?:<(a|script|style|title)\s.*</(?1)>) # matche les liens, script, styles
 			|(?:<!--.*-->)                          # matche les commentaires
 			|(?:<[^>]+>)                            # matche les balises (et leur intérieur) restantes
