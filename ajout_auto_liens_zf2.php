@@ -10,7 +10,7 @@ $min_review_id = $this->params()->fromRoute('review_id', 0);
 $bNoUpdateBdd = $this->params()->fromRoute('test', 0);
 
 // + ajouter un paramètre "test" permettant de ne pas jouer la requête en fin de fonction
-$aExceptions = array(894,465,833,984,642,558,841,803,594,756,511,337,1228,594,1123,1217,1209,1214,1295,1111,913,1402,1123,1642);
+$aExceptions = array(); // some book_ids to avoid ?
 $iTotalCount = $iModifiedReviewsCount = 0;
 
 // constitution du tableau $aPattern => $aReplacement
